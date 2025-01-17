@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Request List</title>
+</head>
+<body>
+    <h1>Service Request List</h1>
+    <ul>
+        {% for request in requests %}
+            <li>{{ request.service_type }} - {{ request.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
